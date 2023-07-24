@@ -19,8 +19,8 @@ else
     GIT_VERSION="v${SemVer}-${BRANCH_NAME}.${PRE_RELEASE}"
 fi
 
-echo "Branch Name: ${BRANCH_NAME}"
-echo "Production Build: ${INPUT_PROD}"
+echo "BRANCH_NAME=${BRANCH_NAME}" >> $GITHUB_OUTPUT
+echo "Production_Build=${INPUT_PROD}" >> $GITHUB_OUTPUT
 
-echo "Version: ${VERSION}"
-echo "Git Version: ${GIT_VERSION}"
+echo "VERSION=${VERSION}" >> $GITHUB_OUTPUT
+echo "GIT_VERSION=${GIT_VERSION}" >> $GITHUB_OUTPUT
