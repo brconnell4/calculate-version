@@ -1,0 +1,14 @@
+name: 'Calculate Version'
+description: 'Determines version using GitVersion and writes it to .tags file'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+inputs:
+  PROD:
+    description: 'Flag indicating whether production is true'
+    default: 'false'
+outputs:
+  VERSION:
+    description: 'The version determined by GitVersion'
+  GIT_VERSION:
+    description: 'The version determined by GitVersion'
