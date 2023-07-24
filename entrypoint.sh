@@ -17,7 +17,7 @@ if [ "${INPUT_PROD}" == "true" ]; then
     GIT_VERSION="v${SemVer}"
 else
     VERSION="${SemVer}-${BRANCH_NAME}.${PRE_RELEASE}"
-    GIT_VERSION="v${SemVer}-${BRANCH_NAME}.${GITVERSION_PRERELEASENUMBER}"
+    GIT_VERSION="v${SemVer}-${BRANCH_NAME}.${PRE_RELEASE}"
 fi
 
 echo "Branch Name: ${BRANCH_NAME}"
