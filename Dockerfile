@@ -7,4 +7,4 @@ COPY entrypoint.sh .
 RUN chmod +x entrypoint.sh
 #COPY .git/ .git/
 
-ENTRYPOINT ["./entrypoint.sh"]
+ENTRYPOINT ["entrypoint.sh"]
