@@ -1,8 +1,5 @@
 #!/bin/bash -l
 
-ls -la
-./dotnet-gitversion
-
 # Execute dotnet-gitversion and store the output
 OUTPUT=$(./dotnet-gitversion)
 
