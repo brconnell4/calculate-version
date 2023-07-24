@@ -1,7 +1,8 @@
 #!/bin/bash -l
 
+ls -la
 # Execute dotnet-gitversion and store the output
-OUTPUT=$(./dotnet-gitversion)
+OUTPUT=$(/tools/dotnet-gitversion)
 
 # Extract branch name from Github environment variable
 BRANCH_NAME=$(echo "$GITHUB_HEAD_REF" | sed 's/features\///')
