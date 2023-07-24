@@ -1,6 +1,5 @@
 #!/bin/bash -l
 
-ls -la
 # Execute dotnet-gitversion and store the output
 OUTPUT=$(/tools/dotnet-gitversion)
 
@@ -22,6 +21,6 @@ fi
 
 echo "Branch Name: ${BRANCH_NAME}"
 echo "Production Build: ${INPUT_PROD}"
-echo "SemVer: ${SemVer}"
-echo "Git Version: ${GIT_VERSION}"
+
 echo "Version: ${VERSION}"
+echo "Git Version: ${GIT_VERSION}"
