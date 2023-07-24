@@ -12,3 +12,7 @@ outputs:
     description: 'The version determined by GitVersion'
   GIT_VERSION:
     description: 'The version determined by GitVersion'
+  PRODUCTION_BUILD:
+    description: 'Bool value if this was a production build'
+  BRANCH_NAME:
+    description: 'Name of Branch SemVer was calculated for'
