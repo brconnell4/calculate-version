@@ -12,9 +12,11 @@ PRE_RELEASE=$(echo "$OUTPUT" | jq -r .PreReleaseNumber)
 
 ## Determine if prod flag is true
 if [ "${INPUT_PROD}" == "true" ]; then
+    echo "Building with Production Versioning"
     VERSION="${SemVer}"
     GIT_VERSION="v${SemVer}"
 else
+    echo "Building without Production Versioning"
     VERSION="${SemVer}-${BRANCH_NAME}.${PRE_RELEASE}"
     GIT_VERSION="v${SemVer}-${BRANCH_NAME}.${PRE_RELEASE}"
 fi
